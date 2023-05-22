@@ -19,6 +19,7 @@ fn read_file_string(filename: &str) -> String {
         .expect("Should have been able to read the file");    
     contents
 }
+
 #[derive(Copy, Clone)]
 enum Direction {
     NORTH,
@@ -26,7 +27,6 @@ enum Direction {
     SOUTH,
     WEST,
 }
-
 
 fn turn(dir: Direction, rotate: Rotate) -> Direction {
     let index = dir as isize;
